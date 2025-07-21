@@ -1,0 +1,16 @@
+// const array = ['사과','배','귤','바나나']
+//
+// console.log('# for in 반복문')
+// for(const i in array){
+//     console.log(i)
+// }
+// console.log('# for of 반복문')
+// for(const i of array){
+//     console.log(i)
+// }
+
+// const array = [];
+// for(let i = 0; i< 3; i++){
+//     array.push((i+1) * 3)
+// }
+// console.log(array)

@@ -109,3 +109,84 @@
 // }
 //
 // alert(`값은 ${count} 입니다.`)
+
+const rawInput = prompt('태어난 해를 입력해주세요.','');
+const year = Number(rawInput)
+
+let 간
+switch (year % 12){
+    case 0:
+        간 = '신'
+        break;
+    case 1:
+        간 = '유'
+        break;
+    case 2:
+        간 = '술'
+        break;
+    case 3:
+        간 = '해'
+        break;
+    case 4:
+        간 = '자'
+        break;
+    case 5:
+        간 = '축'
+        break;
+    case 6:
+        간 = '인'
+        break;
+    case 7:
+        간 = '묘'
+        break;
+    case 8:
+        간 = '진'
+        break;
+    case 9:
+        간 = '사'
+        break;
+    case 10:
+        간 = '오'
+        break;
+    case 11:
+        간 = '미'
+        break;
+}
+
+let 띠
+switch (year % 10){
+    case 0:
+        띠 = '경'
+        break;
+    case 1:
+        띠 = '신'
+        break;
+    case 2:
+        띠 = '임'
+        break;
+    case 3:
+        띠 = '계'
+        break;
+    case 4:
+        띠 = '갑'
+        break;
+    case 5:
+        띠 = '을'
+        break;
+    case 6:
+        띠 = '병'
+        break;
+    case 7:
+        띠 = '정'
+        break;
+    case 8:
+        띠 = '무'
+        break;
+    case 9:
+        띠 = '기'
+        break;
+}
+
+
+alert(`${year}년은 ${띠}${간} 년입니다.`)
+
