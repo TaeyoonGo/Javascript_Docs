@@ -4,9 +4,9 @@ class LifeCycle {
         this.b()
         this.c()
     }
-    a(){console.log('a() 메서드를 호출합니다.')}
-    b(){console.log('b() 메서드를 호출합니다.')}
-    c(){console.log('c() 메서드를 호출합니다.')}
+    a(){console.log('a() Method를 호출합니다.')}
+    b(){console.log('b() Method를 호출합니다.')}
+    c(){console.log('c() Method를 호출합니다.')}
 }
 
 class Child extends LifeCycle{
