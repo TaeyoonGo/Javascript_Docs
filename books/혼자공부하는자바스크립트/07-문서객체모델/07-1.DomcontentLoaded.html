@@ -8,17 +8,12 @@
     <title>Document</title>
     <script>
         document.addEventListener('DOMContentLoaded',()=>{
-            const imgs = document.querySelectorAll('img')
-
-            imgs.forEach((img)=>{
-                img.addEventListener('contextmenu',(event)=>{
-                    event.preventDefault()
-                })
-            })
+            const h1 = (text) => `<h1>${text}</h1`
+            document.body.innerHTML = h1('DOMContentLoaded 이벤트 발생')
         })
     </script>
 </head>
 <body>
-    <img src="https://www.placekittens.com/300/300" alt="야옹이">
+
 </body>
 </html>
