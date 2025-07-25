@@ -8,5 +8,5 @@ const students = [
     new Student(),
     new Student(),
     new Student(),
-    new Student()
+    new Student(),
 ]
