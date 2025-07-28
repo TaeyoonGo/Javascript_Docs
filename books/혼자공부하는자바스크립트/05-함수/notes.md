@@ -81,16 +81,14 @@ function 함수(...나머지매개변수) {
 ```js
 const items = [1, 2, 3, 4];
 // 전개연산자
-...
-items
-
+...items
 
 function sample(...items) { //여기서...은 가변매개변수
     console.log(items)
 }
 
-sample(array) // [array(4)] 각각의 요소가 배열로 들어옴 (2차원배열)
-sample(...array) // [1,2,3,4] 숫자가 하나하나씩 들어옴
+sample(items) // [array(4)] 각각의 요소가 배열로 들어옴 (2차원배열)
+sample(...items) // [1,2,3,4] 숫자가 하나하나씩 들어옴
 ```
 
 ### 기본 매개변수
