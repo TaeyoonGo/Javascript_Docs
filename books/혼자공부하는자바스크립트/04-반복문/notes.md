@@ -48,8 +48,8 @@ console.log(fruits) //['사과','배','키위','바나나','딸기']
 - length 속성을 사용하여 배열의 마지막 위치에 추가
 
 ```js
-    const fruits = ['사과', '배', '키위', '바나나']
-fruits[fruits[fruits.length]] = '딸기'
+const fruits = ['사과', '배', '키위', '바나나']
+fruits[fruits.length] = '딸기'
 console.log(fruits) //['사과','배','키위','바나나','딸기']
 ```
 
@@ -65,9 +65,12 @@ const fruits = ['사과', '배', '키위', '바나나']
 fruits.splice(2, 1)
 console.log(fruits) // ['사과', '배', '바나나']
 ```
+
 #### 값을 기반으로 제거하는 경우
-- 배열 내부에서 값을 찾는 indexOf() 메소드를 활용해서 값을 찾은 후  splice() 메소드로 제거
+
+- 배열 내부에서 값을 찾는 indexOf() 메소드를 활용해서 값을 찾은 후 splice() 메소드로 제거
 - indexOf() 매서드는 값이 없으면 -1을 return
+
 ```js
 const fruits = ['사과', '배', '키위', '바나나']
 const index = fruits.indexOf('키위')
@@ -75,57 +78,79 @@ console.log(index) // 2
 fruits.splice(index, 1)
 console.log(fruits) // ['사과', '배', '바나나']
 ```
+
 ##### 문자열 indexOf Method
+
 - 특정 문자열의 위치를 찾을 수 있음 (배열 사용법과 유사)
 
 ### 배열의 특정 위치에 요소 추가하기
+
 - splice() Method 사용
+
 ```js
 const fruits = ['사과', '배', '키위', '바나나']
-fruits.splice(1,0,'양파')
+fruits.splice(1, 0, '양파')
 console.log(fruits) // ['사과','양파' ,'배', '키위', '바나나']
 ```
 
 ### 자료의 비파괴와 파괴
+
 - 비파과적 처리 : 처리 후에 원본 내용이 변경되지 않습니다.
 - 파괴적 처리 : 처리 후에 원본 내용이 변경됩니다.
+
 *** 
 
 ## 04-2 반복문
+
 ### for in 반복문
+
 - 반복변수에는 index
 - 조금 위험한 반복문으로 for of 반복문이나 for 반복문 사용 권장
+
 ```js
-for(const 반복변수 in 배열또는객체){
+for (const 반복변수 in 배열또는객체) {
     문장
 }
 ```
+
 ### for of 반복문
+
 - 반복변수에는 요소의 값
+
 ```js
-for(const 반복변수 of 배열또는객체){
+for (const 반복변수 of 배열또는객체) {
     문장
 }
 ```
+
 ### for 반복문
+
 - 특정 횟수를 반복하고 싶을때 사용하는 반복문
 - 다른 반복문과 달리 let 선언
 - 반복문을 배열과 조합하려면 보통 배열의 length 속성만큼 반복돌려서 사용
+
 ```js
-for(let i = 0; i < 반복횟수; i++){
+for (let i = 0; i < 반복횟수; i++) {
     문장
 }
 ```
+
 ### while 반복문
-- while 반복문은 불 표현식이 true 계속 반복 
+
+- while 반복문은 불 표현식이 true 계속 반복
 - 조건이 거짓으로 문장이 없을 경우 계속 반복되는데 이것을 무한 루프라고 합니다.
 - while 반복문은 조건에 큰 비중이 있을때 사용
+
 ```js
-while(불표현식){
+while (불표현식) {
     문장
 }
 ```
+
 ### break 키워드
+
 - switch 조건문이나 반복문을 벗어날 때 사용하는 키워드
+
 ### continue 키워드
+
 - 반복 작업을 멈추고 반복문의 처음으로 돌아가 다시 반복 작업 수행하는 키워드
