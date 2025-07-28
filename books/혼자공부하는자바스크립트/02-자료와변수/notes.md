@@ -177,7 +177,7 @@ const input = prompt('안녕하세요')
 ```js
 confirm('메세지 문자열')
 
-// true 체크 시 input에 true 값이 return
+// true 체크 시 input에 boolen 값이 return
 const input = confirm('수락하시겠습니까?')
 ```
 
